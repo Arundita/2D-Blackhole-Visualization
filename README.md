@@ -28,7 +28,7 @@ Working Theory<br>
 • Simulated the behavior of light particles, gravity & other matter around the Schwarzschild blackhole using C++ & SFML. <br>
 • Created objects using SFML Texture and Sprites. Simulated the bending of light particles through space-time curve by
 programming the equation of circle with the angular speed, radial acceleration & the angle of rotation.<br>
-• Simulated the gravitational-pull by programming a “stretching effect” of planets and other heavy bodies. <br>
+• Simulated the gravitational-pull by programming a Spaghettification or “noodle effect” of planets and other heavy bodies. <br>
 This is achieved by increasing the movement and the width and decreasing the height of the Sprites at the same time.<br>
 
 

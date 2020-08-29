@@ -1,4 +1,4 @@
-I created this project to simulate the behavior of space-time, blackhole and gravity.<br>
+I combined my passion for programming, physics & art and created this project to simulate the behavior of space-time, blackhole and gravity.<br>
 A blackhole is massive, its mass is equal to 2.6 billion solar masses, or 2.6 billion suns.<br>
 It's so massive that we can’t see it because the gravitational pull is so strong, there is so much matter in there that any light that is traveling towards it,
 once it in certain proximity can no longer escape it. This proximity is called the event horizon.<br>

@@ -34,3 +34,11 @@ This is achieved by increasing the movement and the width and decreasing the hei
 
 Demo<br><br>
 ![](blackhole.gif)
+
+<br><br>
+<b>Behaviour of the light particles.<b>
+  
+  At the beginning of the video, we can see that the light particles that are traveling towards the event horizon are sucked in instantly. <br>
+  The light particle traveling towards the red region (photon orbit) orbit around and eventually fall into the blackhole.<br>
+  The light particle in the grey region (accretion disk) temporarily bends nad orbits around the accretion region and eventually spiral in the red region, once it's pulled in the red region it spirals out and heads off to infinity.
+  

@@ -21,6 +21,7 @@ If outside the photon orbit, ie the grey area or the accretion disk, the matter 
 If inside the red area(photon orbit), matter objects get absorbed and die, this is event horizon past which nothing can escape.<br>
 In the red area (photon orbit) only light can orbit as light has no mass, but in the grey area (accretion disk), the matter can also orbit.<br>
 The photon sphere is an unstable orbit, ie eventually all the light particles will either fall in the black hole or spiral out and head off to infinity.<br>
+The matter that has higher weight (than light particles) experience Spaghettification or “noodle effect”.<br>
 <br>
 
 Working Theory<br>

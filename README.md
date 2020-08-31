@@ -26,12 +26,12 @@ The matter that has higher weight (than light particles) experience Spaghettific
 
 Working Theory<br>
 
-• Simulated the behavior of light particles, gravity & other matter around the Schwarzschild blackhole using C++ & SFML. <br>
-• Created objects using SFML Texture and Sprites.<br>
-The orbiting behavior of the physical matter is simulated by programming the circular motion with angular speed, radial acceleration and the angle of rotation.<br>
-The angel of rotation is incremented by the speed of the object. At every frame, the x and y coordinates are calculated as sine and cosine of the angle of rotation.
+1. Simulated the behavior of light particles, gravity & other matter around the Schwarzschild blackhole using C++ & SFML. <br>
+2. Created objects using SFML Texture and Sprites.<br>
+3. The orbiting behavior of the physical matter is simulated by programming the circular motion with angular speed, radial acceleration and the angle of rotation.<br>
+4. The angel of rotation is incremented by the speed of the object. At every frame, the x and y coordinates are calculated as sine and cosine of the angle of rotation.
 <br>
-• Simulated the gravitational-pull by programming a Spaghettification or “noodle effect” of planets and other heavy bodies. <br>
+5. Simulated the gravitational-pull by programming a Spaghettification or “noodle effect” of planets and other heavy bodies. <br>
 This is achieved by increasing the movement and the width and decreasing the height of the Sprites at the same time.<br>
 
 

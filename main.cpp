@@ -1,8 +1,5 @@
 
-//
-// Disclaimer:
-// ----------
-//
+
 // This code will work only if you selected window, graphics and audio.
 //
 // Note that the "Run Script" build phase will copy the required frameworks
@@ -18,15 +15,12 @@
 #include <SFML/Graphics.hpp>
 #include <math.h>
 #include <iostream>
-
-// Here is a small helper for you! Have a look.
 #include "ResourcePath.hpp"
 using namespace sf;
 using namespace std;
 
 int main(int, char const**)
 {
-    //system("pwd");
     // Create the main window
     VideoMode vm(800,600);
     RenderWindow window(vm,"blackhole",Style::Fullscreen);
@@ -267,7 +261,6 @@ int main(int, char const**)
     Texture trailingLightTexture;
     trailingLightTexture.setSmooth(true);
     trailingLightTexture.setRepeated(true);
-    //trailingLightTexture.loadFromFile("graphics/trailingLight.png");
 
     RectangleShape trailingLight;
     trailingLight.setTexture(&trailingLightTexture);
@@ -308,7 +301,6 @@ int main(int, char const**)
         }
        
         if(!paused){
-            //bgmusic.play();
             clock.restart();
                 for(int i=0;i<numOfPhotons_eventHorizon;i++){
                     photon_eventHorizon[i].move(5,0);
@@ -337,7 +329,6 @@ int main(int, char const**)
             //case 3 - asteroid
             if(accretionRegion){
                 astSprite.move(1.6,-.5);
-                //astSprite.move(.16,-.05);
             }
             if(!accretionRegion){
                 if (angle > 360)//if angle exceeds 360
@@ -383,12 +374,6 @@ int main(int, char const**)
                 debris_3.move(-sin(ang_deb3),cos(ang_deb3));//move on a circular path
             }
             
-            
-            
-            
-            
-            
-            
             if(accretionRegion_photon){
                 photon_accretionRegion.move(5,0);
                 //photon_accretionRegion.move(-3,0);
@@ -429,12 +414,9 @@ int main(int, char const**)
                 planet.setSize(planet.getSize() + Vector2f(0.25,-0.08));
             }
             if(absorbPlanet){
-                //test.setOrigin(-test.getGlobalBounds().width, test.getGlobalBounds().height);
                 planet.move(5,.15);
                 planet.setPosition(3000, 3000);
             }
-            
-            
             
             if(!stretchAstronaut){
                 astronaut.move(-.20,.1);
@@ -445,14 +427,9 @@ int main(int, char const**)
                 astronaut.setSize(astronaut.getSize() + Vector2f(0.20,0));
             }
             if(absorbAstronaut){
-                //test.setOrigin(-test.getGlobalBounds().width, test.getGlobalBounds().height);
                 astronaut.move(-5,.15);
                 astronaut.setPosition(3000, 3000);
             }
-            
-            
-            
-            
                 //case 1: if the light falls inside th event horizon, light particles should get ablsorb by theblackhole without curving
             for(int i=0;i<numOfPhotons_eventHorizon;i++){
                 if(photon_eventHorizon[i].getGlobalBounds().intersects(eventHorizonMirror.getGlobalBounds())){
@@ -460,20 +437,13 @@ int main(int, char const**)
                     photon_eventHorizon[i].setPosition(3000, 3000);
                 }
             }
-            //case2: the photons that fall in the red area, should orbit and eventually fall,
-            /*if (photon_redOrbit.getPosition().x < blackhole.getPosition().x + 0.9*rs){
-                  orbitRegion = false;
-          }*/
+            //case2: the photons that fall in the red area, should orbit and eventually fall
             if (photon_redOrbit.getGlobalBounds().intersects(blackHoleMirror.getGlobalBounds())){
                 orbitRegion = false;
             }
             
             //the matter falling in the red area should get sucked in instantly.
             //if the mass is bigger, the gravitationalpull is gonna be bigger, in that case, the asteroid or matter will enter the red region and as soon as it enters thered region it is going to sucked into the event horizon as matter cwont spiral in the red region
-            
-
-                
-            
             //case 3: the photons and matter that fall in the grey area should keep orbiting
          
             if(photon_accretionRegion.getGlobalBounds().intersects(accRegionMirror.getGlobalBounds())){
@@ -501,6 +471,7 @@ int main(int, char const**)
             if(planet.getGlobalBounds().intersects(accretionDisk.getGlobalBounds())){
                 stretchPlanet = true;
             }
+            
             //absorb the planet
             if(planet.getGlobalBounds().intersects(blackHoleMirror.getGlobalBounds())){
                 wooshSound.play();
@@ -518,17 +489,10 @@ int main(int, char const**)
             }
             
         }
-        
-        
-        
-        
-        //planet.rotate(.025);
-        
         window.clear();
         window.draw(spriteBg);
         window.draw(accretionDisk);
         window.draw(blackhole);
-        //window.draw(bhsprite);
         window.draw(astSprite);
         for(int i=0;i<numOfPhotons_eventHorizon;i++){
             window.draw(photon_eventHorizon[i]);
@@ -542,16 +506,7 @@ int main(int, char const**)
         window.draw(debris_3);
         window.draw(planet);
         window.draw(astronaut);
-        //window.draw(blackHoleMirror);
-       // window.draw(eventHorizonMirror);
-        //window.draw(accRegionMirror);
-       // window.draw(spiralOutMirror);
-       // window.draw(redOrbitMirror);
-        //window.draw(deb1Mirror);
-        //window.draw(deb2Mirror);
-        //window.draw(deb3Mirror);
         window.display();
         }
-
     return EXIT_SUCCESS;
 }
